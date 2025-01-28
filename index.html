@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/icononly_transparent_nobuffer.png">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Ben Garage Door</title>
+</head>
+
+<body>
+
+	<div id="toast" class="toast hidden"></div>
+
+	<!-- טופס בתוך מודאל -->
+	<div class="modal-form mfp-hide mfp-with-anim" id="modal-form">
+		<div class="modal-form-head">
+			<div class="modal-form-logo">
+				<img src="images/fulllogo_transparent_nobuffer.png" alt="Ben Garage Door">
+			</div>
+			<div class="modal-form-close">
+				<img src="images/close.svg" alt="Close">
+			</div>
+		</div>
+		<div class="modal-form-body">
+			<div class="modal-form-title">Request a call</div>
+			<form id="emailForm">
+				<input type="text" id="name" placeholder="Your name*" required>
+				<input type="text" id="phone" placeholder="Your phone*" required>
+				<input type="email" id="email" placeholder="Your email" required>
+				<textarea id="message" cols="30" rows="5" placeholder="Comment" required></textarea>
+				<button type="submit" class="form-button">Send</button>
+			</form>
+		</div>
+	</div>
+	
+
+
+
+	<div class="go-up">
+		<a href="#">
+			<img src="images/arrow-up.svg" alt="Go up">
+		</a>
+	</div>
+
+	<header class="site-header">
+
+		<div class="header-top">
+			<div class="container">
+				<div class="header-row">
+
+					<!-- Header top mobile START -->
+					<div class="header-mobile-logo">
+						<a href="#">
+							<img src="images/fulllogo_transparent_nobuffer.png" alt="Construction">
+						</a>
+					</div>
+
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+					</div>
+					<!-- Header top mobile END -->
+
+					<div class="header-desc">Garage door work of all kinds</div>
+					<div class="header-right">
+						<div class="header-info">
+							<img src="images/location.svg" alt="Location">
+							<span>Los Angeles county</span>
+						</div>
+						<a href="tel:+18183929681" class="header-info" aria-label="Call us at +1 818-392-9681">
+							<img src="images/phone.svg" alt="Phone">
+							<span>+1 818-392-9681</span>
+						</a>
+
+
+						<div class="header-social">
+							<a href="https://www.yelp.com/biz/bens-garage-doors-los-angeles-2?uid=VZISvTABG3BWGe0PM3TAVw&utm_source=ishare"
+								target="_blank">
+								<img src="images/yelp-Icon.svg" alt="Twitter">
+							</a>
+							<a href="http://wa.me/18183929681" target="_blank">
+								<img src="images/whatsapp.svg" alt="Twitter">
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="header-bottom">
+			<div class="container">
+				<div class="header-bottom-row">
+					<div class="header-logo">
+						<a href="#">
+							<img src="images/fulllogo_transparent_nobuffer.png" alt="Ben Garage Door">
+						</a>
+					</div>
+
+					<nav class="header-nav">
+						<ul>
+							<li><a class="anchor-link" href="#s-about">About us</a></li>
+							<li><a class="anchor-link" href="#s-services">Services</a></li>
+							<li><a class="anchor-link" href="#s-gallery">Gallery</a></li>
+							<li><a class="anchor-link" href="#s-testimonials">Testimonials</a></li>
+							<li><a class="anchor-link" href="#s-contact">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Header mobile START -->
+		<div class="header-mobile-wrap">
+			<nav class="header-mobile-nav">
+				<ul>
+					<li><a class="anchor-link" href="#s-about">About us</a></li>
+					<li><a class="anchor-link" href="#s-services">Services</a></li>
+					<li><a class="anchor-link" href="#s-gallery">Gallery</a></li>
+					<li><a class="anchor-link" href="#s-testimonials">Testimonials</a></li>
+					<li><a class="anchor-link" href="#s-contact">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="header-mobile-info">
+				<img src="images/location.svg" alt="Location">
+				<span>Los Angeles county</span>
+			</div>
+			<a href="tel:79504575654" class="header-mobile-info">
+				<img src="images/phone.svg" alt="+1 818-392-9681">
+				<span>+1 818-392-9681</span>
+			</a>
+
+			<div class="header-mobile-social">
+				<a href="https://www.yelp.com/biz/bens-garage-doors-los-angeles-2?uid=VZISvTABG3BWGe0PM3TAVw&utm_source=ishare"
+					target="_blank">
+					<img src="images/yelp-Icon.svg" alt="Twitter">
+				</a>
+				<a href="http://wa.me/18183929681" target="_blank">
+					<img src="images/whatsapp.svg" alt="Twitter">
+				</a>
+			</div>
+		</div>
+		<!-- Header mobile END -->
+
+	</header>
+
+
+	<section class="s-banner">
+
+		<div class="swiper banner-swiper">
+
+			<div class="swiper-wrapper">
+				<div class="swiper-slide" style="background-image: url(images/garage6.jpg)">
+					<div class="banner-content">
+						<div class="banner-subtitle wow fadeIn" data-wow-delay="0.1s">Certified company</div>
+						<h2 class="banner-title wow fadeIn" data-wow-delay="0.2s"><strong>Secure Your Home</strong> with
+							Upgrade Garage Doors & Gate Services</h2>
+						<a href="#s-services" class="banner-btn def-btn anchor-link wow fadeIn"
+							data-wow-delay="0.3s">View Services</a>
+					</div>
+				</div>
+				<div class="swiper-slide" style="background-image: url(images/garage7.jpg)">
+					<div class="banner-content">
+						<div class="banner-subtitle wow fadeIn">Certified company</div>
+						<h2 class="banner-title"><strong>High-Quality Materials</strong> Enjoy long-lasting doors
+							crafted from the finest materials.</h2>
+						<a href="#s-services" class="banner-btn def-btn anchor-link">View Services</a>
+					</div>
+				</div>
+				<div class="swiper-slide" style="background-image: url(images/garage9.jpg)">
+					<div class="banner-content">
+						<div class="banner-subtitle">Certified company</div>
+						<h2 class="banner-title"><strong>Professional Installation - </strong>
+							Our skilled technicians ensure a seamless installation process.</h2>
+						<a href="#s-services" class="banner-btn def-btn anchor-link">View Services</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-pagination wow fadeInUp" data-wow-delay="0.5s"></div>
+
+			<div class="container">
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<section class="s-about" id="s-about">
+		<div class="container">
+
+			<div class="about-row">
+				<div class="about-left">
+					<h2 class="def-title wow fadeInLeft" data-wow-delay="0.2s">About our company</h2>
+					<div class="def-desc wow fadeInLeft" data-wow-delay="0.3s">
+						<strong>Ben garage door </strong> is a dedicated company specializing in the design,
+						installation, and maintenance of garage doors.
+						Our unique and straightforward philosophy ensures that one professional oversees your project
+						from the initial concept
+						to the final installation. This approach guarantees seamless communication, allowing you to
+						share your ideas and
+						preferences directly with an expert, ensuring your garage door is tailored perfectly to your
+						needs.
+
+					</div>
+					<a href="#s-services" class="def-btn anchor-link wow fadeInLeft" data-wow-delay="0.4s">Order
+						service</a>
+				</div>
+
+				<div class="about-right">
+					<img src="images/manwork.jpeg" alt="О нас" class="wow fadeIn" data-wow-delay="0.5s">
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<section class="s-numbers">
+		<div class="container">
+			<div class="numbers-row num-scroll">
+
+				<div class="numbers-left">
+					<h2 class="def-title color-white wow fadeInLeft" data-wow-delay="0.2s">Our company <br> in numbers
+					</h2>
+					<div class="def-desc wow fadeInLeft" data-wow-delay="0.3s">
+						One important criterion of our company is customer orientation. When ordering our services, you
+						can be sure of the quality of the result.
+					</div>
+				</div>
+
+				<div class="numbers-right">
+					<div class="numbers-item">
+						<div class="numbers-num num-js" data-count="600">0</div>
+						<div class="numbers-desc">
+							Satisfied <br>
+							clients
+						</div>
+					</div>
+					<div class="numbers-item">
+						<div class="numbers-num num-js" data-count="10">0</div>
+						<div class="numbers-desc">
+							Years of work experience
+						</div>
+					</div>
+					<div class="numbers-item">
+						<div class="numbers-num num-js" data-count="50">0</div>
+						<div class="numbers-desc">
+							Awards
+						</div>
+					</div>
+					<div class="numbers-item">
+						<div class="numbers-num num-js" data-count="100">0</div>
+						<div class="numbers-desc">
+							Realized <br>
+							projects
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s-services" id="s-services">
+		<div class="container">
+			<h2 class="center-title wow fadeIn" data-wow-delay="0.1s">Our services</h2>
+
+			<div class="services-row">
+
+				<div class="services-item wow fadeIn" data-wow-delay="0.1s">
+					<div class="services-thumb">
+						<img src="images/garag4.jpg" alt="Construction of houses">
+					</div>
+					<div class="services-body">
+						<h4 class="services-title">New Garage Doors Instalation</h4>
+						<div class="services-desc">
+							Elevate your home's appearance and safety with our extensive range of custom garage doors,
+							designed to complement any
+							style.
+						</div>
+						<a href="#modal-form" data-effect="mfp-zoom-in" class="def-btn services-btn">Order service</a>
+					</div>
+				</div>
+
+				<div class="services-item wow fadeIn" data-wow-delay="0.2s">
+					<div class="services-thumb">
+						<img src="images/broke.jpeg" alt="Ремонт по дому">
+					</div>
+					<div class="services-body">
+						<h4 class="services-title">Broken Springs Repair</h4>
+						<div class="services-desc">
+							Bring your garage door back to perfect working condition with our professional broken spring
+							repair services,
+							guaranteeing safety and seamless operation.
+						</div>
+						<a href="#modal-form" data-effect="mfp-zoom-in" class="def-btn services-btn">Order service</a>
+					</div>
+				</div>
+
+				<div class="services-item wow fadeIn" data-wow-delay="0.3s">
+					<div class="services-thumb">
+						<img src="images/broke.jpg" alt="Building design">
+					</div>
+					<div class="services-body">
+						<h4 class="services-title">Door Off Track Repairs</h4>
+						<div class="services-desc">
+							Restore your garage door's functionality with our professional repair services, providing
+							reliable and safe operation.
+						</div>
+						<a href="#modal-form" data-effect="mfp-zoom-in" class="def-btn services-btn">Order service</a>
+					</div>
+				</div>
+
+
+				<div class="services-item wow fadeIn" data-wow-delay="0.3s">
+					<div class="services-thumb">
+						<img src="images/gate.jpeg" alt="Building design">
+					</div>
+					<div class="services-body">
+						<h4 class="services-title">Gate repair</h4>
+						<div class="services-desc">
+							Enhance the safety and performance of your gate with our expert repair services. We ensure
+							reliable, seamless operation,
+							tailored to meet your needs.
+
+						</div>
+						<a href="#modal-form" data-effect="mfp-zoom-in" class="def-btn services-btn">Order service</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s-gallery" id="s-gallery">
+		<div class="container">
+			<h2 class="center-title wow fadeIn" data-wow-delay="0.1s">Photo gallery</h2>
+
+			<div class="gallery-wrap">
+				<a href="images/g1.jpg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.2s">
+					<span class="gallery-border"></span>
+					<img src="images/g1.jpg" alt="Image 1">
+				</a>
+				<a href="images/g2.jpg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in" data-wow-delay="0.3s">
+					<span class="gallery-border"></span>
+					<img src="images/g2.jpg" alt="Image 2">
+				</a>
+				<a href="images/garag4.jpg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in"
+					data-wow-delay="0.4s">
+					<span class="gallery-border"></span>
+					<img src="images/garag4.jpg" alt="Image 3">
+				</a>
+				<a href="images/garag5.jpg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in"
+					data-wow-delay="0.5s">
+					<span class="gallery-border"></span>
+					<img src="images/garag5.jpg" alt="Image 4">
+				</a>
+				<a href="images/garag6.jpg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in"
+					data-wow-delay="0.6s">
+					<span class="gallery-border"></span>
+					<img src="images/garag6.jpg" alt="Image 5">
+				</a>
+				<a href="images/garage3.jpg" class="gallery-item wow fadeIn" data-effect="mfp-zoom-in"
+					data-wow-delay="0.7s">
+					<span class="gallery-border"></span>
+					<img src="images/garage3.jpg" alt="Image 6">
+				</a>
+
+				<a href="images/g3.jpg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/g3.jpg" alt="Image 7">
+				</a>
+				<a href="images/g4.jpg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/g4.jpg" alt="Image 8">
+				</a>
+				<a href="images/g5.jpg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/g5.jpg" alt="Image 9">
+				</a>
+				<a href="images/g6.jpg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/g6.jpg" alt="Image 10">
+				</a>
+				<a href="images/g7.jpg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/g7.jpg" alt="Image 11">
+				</a>
+				<a href="images/g8.jpg" class="gallery-item" data-effect="mfp-zoom-in">
+					<span class="gallery-border"></span>
+					<img src="images/g8.jpg" alt="Image 12">
+				</a>
+			</div>
+
+			<div class="gallery-btn">
+				<a href="#" class="def-btn wow fadeInUp" data-wow-delay="0.2s">Show more</a>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="s-why" id="s-why">
+		<div class="container">
+			<div class="why-row">
+
+				<div class="why-left">
+					<h2 class="def-title wow fadeInLeft" data-wow-delay="0.1s">Why us?</h2>
+					<div class="def-desc wow fadeInLeft" data-wow-delay="0.2s">
+						Your garage door is more than just an entryway. <br> it’s a key part of your home’s
+						functionality and style.
+					</div>
+
+					<div class="why-features">
+
+						<div class="why-features-item">
+							<div class="why-features-icon wow fadeInLeft" data-wow-delay="0.3s">
+								<img src="images/check-mark.svg" alt="Check mark">
+							</div>
+
+							<div class="why-features-right">
+								<div class="why-features-title wow fadeInRight" data-wow-delay="0.4s">High-Quality
+									Materials
+								</div>
+								<div class="why-features-desc wow fadeInRight" data-wow-delay="0.5s">
+									With over 10 years of experience, we’ve tested and selected the most durable and
+									reliable materials to ensure your
+									garage door stands the test of time.
+								</div>
+							</div>
+						</div>
+
+						<div class="why-features-item">
+							<div class="why-features-icon wow fadeInLeft" data-wow-delay="0.3s">
+								<img src="images/check-mark.svg" alt="Check mark">
+							</div>
+
+							<div class="why-features-right">
+								<div class="why-features-title wow fadeInRight" data-wow-delay="0.4s">Modern Solutions
+								</div>
+								<div class="why-features-desc wow fadeInRight" data-wow-delay="0.5s">
+									Choosing our garage door services means benefiting from advanced technology and
+									reliable craftsmanship. Our expertise
+									guarantees professional installation, repair, and maintenance you can trust.
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="why-right">
+					<img src="images/manwork7.jpeg" alt="Почему мы?" class="wow fadeIn" data-wow-delay="0.6s">
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="s-reviews" id="s-testimonials" style="background-image: url('images/reviews-bg.png');">
+		<div class="container">
+			<h2 class="center-title color-white wow fadeIn" data-wow-delay="0.1s">What clients say</h2>
+
+			<div class="swiper reviews-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="reviews-item wow fadeInUp" data-wow-delay="0.2s">
+							<div class="reviews-body">
+								<div class="reviews-name">Michael Brown</div>
+								<div class="reviews-profi">Founder of TECHWORLD</div>
+								<div class="reviews-comment">
+									"I was very impressed with the result of the service I ordered. The garage door
+									company fulfilled all my expectations!"
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item wow fadeInUp" data-wow-delay="0.3s">
+							<div class="reviews-body">
+								<div class="reviews-name">Jessica Taylor</div>
+								<div class="reviews-profi">Director of SHOPPING PLAZA</div>
+								<div class="reviews-comment">
+									"I ordered a repair service for my garage door and was very pleased with the result.
+									The company treats its customers
+									responsibly and professionally."
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item wow fadeInUp" data-wow-delay="0.4s">
+							<div class="reviews-body">
+								<div class="reviews-name">Daniel Wilson</div>
+								<div class="reviews-profi">Commercial director of RETAIL SOLUTIONS</div>
+								<div class="reviews-comment">
+									"I needed to fix my garage door. I booked a garage door repair service, and the team
+									took care of everything from start
+									to finish. Highly recommend!"
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item">
+							<div class="reviews-body">
+								<div class="reviews-name">Sophia Martinez</div>
+								<div class="reviews-profi">Manager at AUDITPLUS</div>
+								<div class="reviews-comment">
+									"The garage door service has fulfilled all my expectations. I was very impressed
+									with the result and the professionalism
+									of the team."
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item">
+							<div class="reviews-body">
+								<div class="reviews-name">Ethan Thomas</div>
+								<div class="reviews-profi">Founder of BUILDEXPERTS</div>
+								<div class="reviews-comment">
+									"I ordered a garage door repair service, and the team did an excellent job. I highly
+									recommend this company!"
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="reviews-item">
+							<div class="reviews-body">
+								<div class="reviews-name">Olivia Anderson</div>
+								<div class="reviews-profi">Owner of BLOSSOM BOUTIQUE</div>
+								<div class="reviews-comment">
+									"For a long time, I was looking for solutions for my garage door issue, but this
+									company helped me solve it quickly and
+									professionally. Highly recommend!"
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<div class="s-partners" id="s-partners">
+		<div class="partners-row">
+			<div class="partners-item"><img src="images/clopay-seeklogo.svg" alt="partner"></div>
+			<div class="partners-item"><img src="images/Genie_Pill_Logo_RGB.png" alt="partner"></div>
+			<div class="partners-item"><img src="images/windsor.png" alt="partner"></div>
+			<div class="partners-item"><img src="images/wayne-dalton-logo.png" alt="partner"></div>
+			<div class="partners-item"><img src="images/Stanley-Logo.png" alt="partner"></div>
+			<div class="partners-item"><img src="images/raynor.png" alt="partner"></div>
+			<div class="partners-item"><img src="images/overhead.webp" alt="partner"></div>
+			<div class="partners-item"><img src="images/lifeMaster.jpeg" alt="partner"></div>
+			<div class="partners-item"><img src="images/amarr.jpeg" alt="partner"></div>
+			<div class="partners-item"><img src="images/linear.png" alt="partner"></div>
+		</div>
+	</div>
+	<div id="toast" class="toast hidden">Your message has been sent successfully!</div>
+
+	<section class="s-form" id="s-contact">
+		<div class="container">
+			<div class="form-row">
+
+				<div class="form-left">
+					<h2 class="def-title">Do you have any questions?</h2>
+					<div class="def-desc">
+						If you have any questions or would like to order our services from us, please fill out the form
+						on the right. Our managers work around the clock and will call you back during the day.
+					</div>
+					<div class="form-image">
+						<img src="images/manwork6.jpg" alt="Feedback form">
+					</div>
+				</div>
+
+				<div class="form-right">
+					<form id="emailForm1">
+						<input type="text" id="name1" placeholder="Your name*" required>
+						<input type="text" id="phone" placeholder="Your phone*" required>
+						<input type="email" id="email1" placeholder="Your email">
+						<textarea id="message1" cols="30" rows="5" placeholder="Comment"></textarea>
+						<button type="submit" class="def-btn form-button">Send</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<footer class="site-footer">
+		<div class="container">
+
+			<div class="footer-row">
+
+				<div class="footer-left">
+					<div class="footer-logo">
+						<a href="#">
+							<img src="images/print_transparent.svg" alt="Construction">
+						</a>
+					</div>
+					<div class="footer-desc">
+						<strong>This company</strong> provides full-service garage door solutions, from repairs to
+						installations.
+					</div>
+				</div>
+
+				<div class="footer-right">
+					<nav class="footer-nav">
+						<h5 class="footer-title">Our services</h5>
+						<ul>
+							<li><a href="#">New Garage Doors Instalation</a></li>
+							<li><a href="#">Home repair</a></li>
+							<li><a href="#">Building design</a></li>
+						</ul>
+					</nav>
+
+					<div class="footer-nav">
+						<h5 class="footer-title">Schedule</h5>
+						<ul>
+							<li>Monday : 7:00 AM - 10:00 PM</li>
+							<li>Tuesday : 7:00 AM - 10:00 PM</li>
+							<li>Wednesday : 7:00 AM - 10:00 PM</li>
+							<li>Thursday : 7:00 AM - 10:00 PM</li>
+							<li>Friday : 7:00 AM - 10:00 PM</li>
+							<li>Saturday : 7:00 AM - 10:00 PM</li>
+							<li>Sunday : 7:00 AM - 10:00 PM</li>
+						</ul>
+					</div>
+
+					<div class="footer-nav">
+						<h5 class="footer-title">Contacts</h5>
+						<div class="footer-info-item">
+							<div class="footer-info-icon"><img src="images/location-gray.svg" alt="Location"></div>
+							<div class="footer-info-text">Los Angeles county</div>
+						</div>
+						<a href="tel:79504575654" class="footer-info-item">
+							<div class="footer-info-icon"><img src="images/phone-gray.svg" alt="Phone"></div>
+							<div class="footer-info-text">+1 818-392-9681</div>
+						</a>
+
+						<div class="footer-social">
+							<a href="https://www.yelp.com/biz/bens-garage-doors-los-angeles-2?uid=VZISvTABG3BWGe0PM3TAVw&utm_source=ishare"
+								target="_blank">
+								<img src="images/yelp-Icon.svg" alt="Yelp">
+							</a>
+							<a href="http://wa.me/18183929681" target="_blank">
+								<img src="images/whatsapp.svg" alt="Wgatsapp">
+							</a>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="footer-copyright">
+				<div class="copyright-text">Copyright © 2025 Yahav Helfer - Web developer . All rights reserved</div>
+			</div>
+
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	<script src="js/jquery-3.7.0.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/magnific-popup.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
