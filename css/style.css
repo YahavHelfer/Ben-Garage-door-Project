@@ -106,7 +106,7 @@ textarea::placeholder {
 
 /* Header START */
 .header-top {
-	background-color: #18353E;
+	background-color:rgb(12, 10, 31);
 	color: #fff;
 	padding: 18px 0 55px 0;
 	font-size: 14px;
@@ -156,7 +156,7 @@ textarea::placeholder {
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.11);
 }
 .header-logo {
-	background-color: #fff;
+	background-color:rgb(155, 165, 179);
 	padding: 15px 60px 15px 40px;
 	display: flex;
 	align-items: center;
@@ -467,7 +467,7 @@ textarea::placeholder {
 
 
 .modal-form {
-	background-color: #fff;
+	background-color: rgba(197, 207, 217, 0.82);
 	max-width: 455px;
 	margin: 0 auto;
 	padding: 20px 45px 50px 45px;
@@ -1445,7 +1445,7 @@ textarea::placeholder {
 		display: none;
 	}
 	.header-mobile-logo {
-		background-color: #fff;
+		background-color: rgb(155, 165, 179);
 		padding: 8px 40px 8px 20px;
 		display: flex;
 		align-items: center;
@@ -1492,7 +1492,7 @@ textarea::placeholder {
 	}
 
 	.header-mobile-wrap {
-    background-color: #18353E;
+    background-color:rgb(12, 10, 31);
     color: #fff;
     padding: 30px 20px;
     text-align: center;
