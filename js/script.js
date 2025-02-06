@@ -58,40 +58,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// הפעלת פונקציית המספרים כאשר האלמנט נכנס לתצוגה
 	let isCounterAnimated = false; // דגל למניעת הפעלה כפולה
-	function handleScrollEvents() {
-		// טיפול ב-Header
-		const headerTopHeight = $('.header-top').height();
-		if ($(window).scrollTop() > headerTopHeight) {
-			$('.header-bottom').addClass('is-fixed');
-		} else {
-			$('.header-bottom').removeClass('is-fixed');
-		}
 
-		// הצגת "חץ למעלה"
-		if ($(window).scrollTop() > 1500) {
-			$('.go-up').addClass('is-active');
-		} else {
-			$('.go-up').removeClass('is-active');
-		}
+function handleScrollEvents() {
+    // טיפול ב-Header
+    const headerTopHeight = $('.header-top').height();
+    if ($(window).scrollTop() > headerTopHeight) {
+        $('.header-bottom').addClass('is-fixed');
+    } else {
+        $('.header-bottom').removeClass('is-fixed');
+    }
 
-		// הפעלת המספרים
-		if (!isCounterAnimated && isElementInViewport($('.num-scroll')[0])) {
-			isCounterAnimated = true;
-			$('.num-js').each(function () {
-				const targetValue = parseInt($(this).data('count'));
-				animateCounter(this, targetValue, 2000);
-			});
-		}
-	}
+    // הצגת "חץ למעלה"
+    if ($(window).scrollTop() > 1500) {
+        $('.go-up').addClass('is-active');
+    } else {
+        $('.go-up').removeClass('is-active');
+    }
 
-	// זיהוי מובייל והפעלת אנימציה באופן ידני
-	if (window.innerWidth <= 768) { // מוגדר למובייל
-		$('.num-js').each(function () {
-			const targetValue = parseInt($(this).data('count'));
-			animateCounter(this, targetValue, 2000);
-		});
-		isCounterAnimated = true; // למנוע הפעלה כפולה
-	}
+    // הפעלת המספרים רק כשהם נכנסים למסך
+    if (!isCounterAnimated && isElementInViewport($('.num-scroll')[0])) {
+        isCounterAnimated = true;
+        $('.num-js').each(function () {
+            const targetValue = parseInt($(this).data('count'));
+            animateCounter(this, targetValue, 2000);
+        });
+    }
+}
+
+// הוספת האזנה לגלילה גם במובייל
+$(window).on('scroll', handleScrollEvents);
+
 
 	// אירועי גלילה ושינוי גודל
 	let isScrolling = false;
