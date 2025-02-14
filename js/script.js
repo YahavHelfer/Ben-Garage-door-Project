@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	// אתחול EmailJS
 	if (typeof emailjs !== "undefined") {
-		emailjs.init("UUIbWCb6poCc1FUaD");
+		emailjs.init("b_KEwMhyFmjLjz3w1");
 		console.log("EmailJS initialized");
 	} else {
 		console.error("EmailJS לא נטען כראוי");
@@ -59,35 +59,34 @@ document.addEventListener("DOMContentLoaded", () => {
 	// הפעלת פונקציית המספרים כאשר האלמנט נכנס לתצוגה
 	let isCounterAnimated = false; // דגל למניעת הפעלה כפולה
 
-function handleScrollEvents() {
-    // טיפול ב-Header
-    const headerTopHeight = $('.header-top').height();
-    if ($(window).scrollTop() > headerTopHeight) {
-        $('.header-bottom').addClass('is-fixed');
-    } else {
-        $('.header-bottom').removeClass('is-fixed');
-    }
+	function handleScrollEvents() {
+		// טיפול ב-Header
+		const headerTopHeight = $('.header-top').height();
+		if ($(window).scrollTop() > headerTopHeight) {
+			$('.header-bottom').addClass('is-fixed');
+		} else {
+			$('.header-bottom').removeClass('is-fixed');
+		}
 
-    // הצגת "חץ למעלה"
-    if ($(window).scrollTop() > 1500) {
-        $('.go-up').addClass('is-active');
-    } else {
-        $('.go-up').removeClass('is-active');
-    }
+		// הצגת "חץ למעלה"
+		if ($(window).scrollTop() > 1500) {
+			$('.go-up').addClass('is-active');
+		} else {
+			$('.go-up').removeClass('is-active');
+		}
 
-    // הפעלת המספרים רק כשהם נכנסים למסך
-    if (!isCounterAnimated && isElementInViewport($('.num-scroll')[0])) {
-        isCounterAnimated = true;
-        $('.num-js').each(function () {
-            const targetValue = parseInt($(this).data('count'));
-            animateCounter(this, targetValue, 2000);
-        });
-    }
-}
+		// הפעלת המספרים רק כשהם נכנסים למסך
+		if (!isCounterAnimated && isElementInViewport($('.num-scroll')[0])) {
+			isCounterAnimated = true;
+			$('.num-js').each(function () {
+				const targetValue = parseInt($(this).data('count'));
+				animateCounter(this, targetValue, 3000);
+			});
+		}
+	}
 
-// הוספת האזנה לגלילה גם במובייל
-$(window).on('scroll', handleScrollEvents);
-
+	// הוספת האזנה לגלילה גם במובייל
+	$(window).on('scroll', handleScrollEvents);
 
 	// אירועי גלילה ושינוי גודל
 	let isScrolling = false;
@@ -225,8 +224,8 @@ $(window).on('scroll', handleScrollEvents);
 	}
 
 	// Email Form Setup
-	setupEmailForm('emailForm', "service_8n1rod7", "template_czwhfke");
-	setupEmailForm('emailForm1', "service_8n1rod7", "template_czwhfke");
+	setupEmailForm('emailForm', "service_1qgm9fo", "template_czwhfke");
+	setupEmailForm('emailForm1', "service_1qgm9fo", "template_czwhfke");
 
 	// הפעלה ראשונית
 	handleScrollEvents();
